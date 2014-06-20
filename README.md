@@ -1,5 +1,7 @@
 Here are the test files from my tutorial on how to write tests for SailsJS. These tests wont actually run because it's missing all of Sails, and are mostly for reference.
 
+If you haven't read my tutorial and are interested, you can check it out [here](http://natethepirate.wordpress.com/2014/06/20/how-to-get-started-writing-tests-for-sailsjs/)
+
 <code>test.js</code> is the test file made in the tutorial.
 
 <code>HelloTest.js</code> is another example of a test not covered in the tutorial.
