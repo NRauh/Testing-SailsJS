@@ -14,10 +14,11 @@ before (done) ->
 		
 describe "Foo", ->
 	describe "bar", ->
-		it "returns some JSON", ->
+		it "returns some JSON", (done) ->
 			request(app).get("/foo/bar").end((err, res) ->
 				expect(res.body.hello).to.equal "World"
+				done()
 			)
 			
-after ->
+after (done) ->
 	# stuff to be done
