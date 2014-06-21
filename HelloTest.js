@@ -17,10 +17,11 @@ before(function(done) {
 
 describe("Foo", function() {
 	describe("hello", function() {
-		it("says hello to a user", function() {
+		it("says hello to a user", function(done) {
 			request(app).get("/foo/hello?name=World").end(function(err, res) {
 				expect(res.text).to.equal("Hello, World");
 				// Could also interact with models here
+				done();
 			});
 		});
 	});
