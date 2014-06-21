@@ -15,10 +15,11 @@ before (done) ->
 		
 describe "Foo", ->
 	describe "hello", ->
-		it "says hello to a user", ->
+		it "says hello to a user", (done) ->
 			request(app).get("/foo/hello?name=World").end((err, res) ->
 				expect(res.text).to.equal "Hello, World"
 				# Could also interact with models here
+				done()
 			)
 			
 after ->
